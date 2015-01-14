@@ -36,7 +36,7 @@ define(['lib/key-mirror'], function(KeyMirror){
 
         Engine: {
             STOP_PREDICTING_LAPSE: 300,
-            HOST: window.document.location.host === 'www.polar-cliffs-1083.herokuapp.com/' ? 'http://87.106.233.83:3841' : window.document.location.host.replace(/:3841$/, ':3842'),
+            HOST: window.document.location.host === 'polar-cliffs-1083.herokuapp.com' ? 'http://87.106.233.83' : window.document.location.host.replace(/:3841$/, ':3842'),
             MAX_BET: 10000000 /** Max bet per game 100,000 Bits, this will be calculated dynamically in the future, based on the invested amount in the casino **/
         },
 
