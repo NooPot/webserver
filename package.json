@@ -30,6 +30,6 @@
     "uuid": "~1.4.1"
   },
   "scripts": {
-    "start": "node server/bitcoin_client.js --use_strict"
+    "start": "node server.js --use_strict"
   }
 }
