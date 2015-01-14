@@ -2,6 +2,7 @@ var bitcoin = require('bitcoin');
 var fs = require('fs');
 var path = require('path');
 
+console.log('bitcoin_client.js');
 
 var client = new bitcoin.Client({
     host: process.env.BITCOIND_HOST,
@@ -14,8 +15,8 @@ var client = new bitcoin.Client({
 });
 
 client.getBalance('*', 6, function(err, balance, resHeaders) {
-    if (err) return console.log(err);
+    if (err) return console.log('BITCOND', err);
     console.log('Balance:', balance);
 });
 
-module.exports = client;
+//module.exports = client;
