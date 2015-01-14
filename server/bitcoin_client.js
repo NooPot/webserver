@@ -2,8 +2,6 @@ var bitcoin = require('bitcoin');
 var fs = require('fs');
 var path = require('path');
 
-console.log('bitcoin_client.js');
-
 var client = new bitcoin.Client({
     host: process.env.BITCOIND_HOST,
     port: process.env.BITCOIND_PORT || 8332,
@@ -12,11 +10,6 @@ var client = new bitcoin.Client({
     //ssl: true,
     //sslStrict: true,
     //sslCa: new Buffer(process.env.BITCOIND_CERT || '')
-});
-
-client.getBalance('*', 6, function(err, balance, resHeaders) {
-    if (err) return console.log('BITCOND', err);
-    console.log('Balance:', balance);
 });
 
 module.exports = client;
