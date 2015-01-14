@@ -224,7 +224,7 @@ exports.giveawayRequest = function(req, res, next) {
 
     console.log('req user: ', user);
 
-    var privatekey = '6LewY_YSAAAAAIzk70fzWH0zkqVE3q6ufOJStZ37';
+    var privatekey = '6LfbewATAAAAALA294Ku31EIG2PxOQNRdkrdeMOc';
     var remoteip;
 
     var ips = req.ips;
