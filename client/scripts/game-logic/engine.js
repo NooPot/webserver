@@ -15,6 +15,8 @@ define([
     function Engine() {
         var self = this;
 
+        console.log(AppConstants.Engine.HOST);
+
         /**
          * Engine inherits from BackBone events:
          * http://backbonejs.org/#Events
