@@ -15,7 +15,7 @@ define([
     function Engine() {
         var self = this;
 
-        console.log(AppConstants.Engine.HOST);
+        console.log(window.document.location.host, AppConstants.Engine.HOST);
 
         /**
          * Engine inherits from BackBone events:
